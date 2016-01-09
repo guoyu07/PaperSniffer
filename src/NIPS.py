@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 import re
 import time
 
-class PaperSnifer():
+class NipsSnifer():
 
     def __init__(self, url):
         self.urls = []
@@ -82,22 +82,5 @@ class PaperSnifer():
             print status,
         f.close()
 
-    def cvFoundations(self):
-
-        return 0
-
-    def nips(self):
-
-        return 0
-
-    def jlmr(self):
-        return 0
-
 if __name__ == '__main__':
-    paperSnifer = PaperSnifer("http://www.cv-foundation.org/openaccess/CVPR2015.py")
-    contents = paperSnifer.getContents()
-    paperSnifer.getInfo()
-    paperSnifer.writeBibs()
-    # paperSnifer.downloader()
-    #paperSnifer.downloader()
-    #paperSnifer.writeBibs()
+    print "Success"
